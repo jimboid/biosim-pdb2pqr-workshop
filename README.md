@@ -1,2 +1,16 @@
-# biosim-pdb2pqr-workshop
-A repository containing the build steps for the ccpbiosim workshop on PDB2PQR
+CCPBioSim PDB2PQR Workshop
+==========================
+
+This container is derived from the CCPBioSim JupyterHub image. This container
+adds the necessary software packages and notebook content to form a deployable
+course container. The source content for this course can be found at
+https://github.com/CCPBioSim/pdb2pqr-workshop
+
+How to Use
+----------
+
+In our containers we are using the JupyterHub default port 8888, so you should
+forward this port when deploying locally::
+
+    docker run -p 8888:8888 harbor.stfc.ac.uk/biosimulation-cloud/biosim-pdb2pqr-workshop:latest
+
