@@ -4,7 +4,7 @@ CCPBioSim PDB2PQR Workshop
 This container is derived from the CCPBioSim JupyterHub image. This container
 adds the necessary software packages and notebook content to form a deployable
 course container. The source content for this course can be found at
-https://github.com/CCPBioSim/pdb2pqr-workshop
+https://github.com/CCPBioSim/reduce-propka-workshop
 
 How to Use
 ----------
