@@ -1,4 +1,4 @@
-name: pdb2pqr workshop
+name: build
 
 on:
   repository_dispatch:
