@@ -12,9 +12,8 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN conda install ipywidgets -c conda-forge -y
-RUN conda install mdtraj nglview -y
-RUN pip install pdb2pqr
+RUN conda install nglview ipywidgets -c conda-forge -y
+RUN pip install mdtraj pdb2pqr
 
 # Clone workshop contents
 RUN git clone https://github.com/CCPBioSim/reduce-propka-workshop.git && \
