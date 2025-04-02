@@ -12,6 +12,13 @@ jobs:
     name: Testing ${{ github.repository }}
     steps:
 
+    - name: prepare for tests
+      shell: bash
+      run: |
+        cd data
+        pdb2pqr30 2oz2.pdb 2oz2.pqr --pdb-output 2oz2_pqr.pdb --ffout AMBER --titration-state-method propka
+        cd ..
+
     - name: Test notebooks
       shell: bash
       run: |
