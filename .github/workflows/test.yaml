@@ -19,7 +19,7 @@ jobs:
             cd data; \
             pdb2pqr30 2oz2.pdb 2oz2.pqr --pdb-output 2oz2_pqr.pdb --ffout AMBER --titration-state-method propka; \
             cd ..; \
-            pytest --nbmake *.ipynb;"
+            pytest --nbmake --nbmake-timeout=3600 *ipynb **/*ipynb;"
 
       - name: Authenticate with GHCR
         id: ghcr-auth
